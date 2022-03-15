@@ -32,12 +32,13 @@ module.exports = {
       .join('');
     let color = getRoleColor(interaction.guild);
     const defineEmbed = new MessageEmbed()
-      .setColor(color)
+      .setColor(`#FFD700`)
       .setTitle(`What does ${term} mean?`)
       .addFields(
         { name: 'Definition', value: '```' + definition + '```' },
         { name: 'Example', value: '```' + (example || 'N/A') + '```' }
       )
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
       .setTimestamp();
     interaction.reply({ embeds: [defineEmbed] });
   }

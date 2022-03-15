@@ -39,13 +39,13 @@ module.exports = {
     const warnEmbed = new MessageEmbed()
       .setColor(`#8B0000`)
       .setTitle(`Warn Information`)
-      .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
+      .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(
         { name: `Defendant's name:`, value: `${member.user.tag}`, inline: true },
         { name: `Issued by:`, value: `${author}`, inline: true },
         { name: 'Reason:', value: `${reason}`, inline: true }
       )
-      .setFooter(`Any issues? Please contact an Admin by opening a support ticket or DM wither#7777.`)
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
       .setTimestamp();
     await sendLog(interaction, warnEmbed);
     await member.user.send({ content: `${author} is warning you in ${interaction.guild.name} for ${reason}.` });

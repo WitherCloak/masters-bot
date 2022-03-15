@@ -30,9 +30,9 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const recordEmbed = new MessageEmbed()
-      .setColor(`#2E9C2C`)
+      .setColor(`#FFD700`)
       .setTitle(`${member.username}'s record`)
-      .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
+      .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(
         { name: 'Times warned', value: `${warns.toString()}` },
         { name: 'Times kicked', value: `${kicks.toString()}` },

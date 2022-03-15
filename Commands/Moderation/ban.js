@@ -53,13 +53,13 @@ module.exports = {
       const banEmbed = new MessageEmbed()
         .setColor(`#8B0000`)
         .setTitle(`Ban Information`)
-        .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
+        .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
         .addFields(
           { name: `Defendant's name:`, value: `${member.user.tag}`, inline: true },
           { name: `Issued by:`, value: `${author}`, inline: true },
           { name: `Duration:`, value: `Permanent`, inline: true }
         )
-        .setFooter(`Any issues? Please contact an Admin by opening a support ticket.`)
+        .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
         .setTimestamp();
       let msg = `${author} has permanently banned you from ${interaction.guild.name}. If you wish to appeal this decision, please do so at https://discord.gg/zeKqgufjvb`;
       let BanInfo = {};
@@ -92,14 +92,14 @@ module.exports = {
       const banEmbed = new MessageEmbed()
         .setColor(`#8B0000`)
         .setTitle(`Ban Information`)
-        .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
+        .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
 
         .addFields(
           { name: `Defendant's name:`, value: `${member}`, inline: true },
           { name: `Issued by:`, value: `${author}`, inline: true },
           { name: `Duration:`, value: `${days} days`, inline: true }
         )
-        .setFooter(`Any issues? Please contact an Admin by opening a support ticket.`)
+        .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
         .setTimestamp();
       const millisecondsPerDay = 24 * 60 * 60 * 1000;
       let BanInfo = {};

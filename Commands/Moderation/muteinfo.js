@@ -26,15 +26,15 @@ module.exports = {
     const millisecondsPerMinute = 60 * 1000;
     const minutesRemaining = Math.ceil((mutedMember.unmuteDate - Date.now()) / millisecondsPerMinute);
     const muteInfoEmbed = new MessageEmbed()
-      .setColor(`#2E9C2C`)
+      .setColor(`#FFD700`)
       .setTitle(`Mute Information`)
-      .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
+      .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(
         { name: `Defendant's name:`, value: member.user.tag , inline: true },
         { name: `Issued by:`, value: mutedMember.author , inline: true },
         { name: `Minutes Remaining:`, value: minutesRemaining.toString() , inline: true }
       )
-      .setFooter(`Any issues? Please contact an Admin by opening a support ticket or DM wither#7777.`) 
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`) 
       .setTimestamp();
     if (mutedMember.reason) muteInfoEmbed.addField('Reason', mutedMember.reason);
     interaction.reply({ embeds: [muteInfoEmbed] });

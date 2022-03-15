@@ -64,7 +64,7 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const botSettingsEmbed = new MessageEmbed()
-      .setColor(color)
+      .setColor(`#FFD7001`)
       .setTitle(`Server settings for ${interaction.guild.name}`)
       .addFields(
         { name: 'Suggestion Channel', value: '```' + suggestionChannel + '```', inline: true },
@@ -76,6 +76,7 @@ module.exports = {
         { name: 'Leave Channel', value: '```' + leaveChannel + '```', inline: true },
         { name: 'Leave Message', value: '```' + `${leaveMessage} [${leaveMessageState}]` + '```', inline: true }
       )
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
       .setTimestamp();
     await interaction.reply({ embeds: [botSettingsEmbed] });
   }

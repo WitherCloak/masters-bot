@@ -23,14 +23,15 @@ module.exports = {
     interaction.channel.bulkDelete(amount, true);
     let color = getRoleColor(interaction.guild);
     const clearEmbed = new MessageEmbed()
-      .setColor(color)
+      .setColor(`#FFD700`)
       .setTitle(`Cleared Messages`)
+      .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(
         { name: 'Cleared by:', value: `${interaction.member.user.username}` },
         { name: 'Amount of Messages Deleted:', value: `${amount}` },
         { name: 'Channel:', value: `${interaction.channel.name}` }
       )
-      .setFooter(`Any issues? Please contact an Admin by opening a support ticket or DM wither#7777.`) 
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`) 
       .setTimestamp();
     sendLog(interaction, clearEmbed);
   }

@@ -13,12 +13,14 @@ module.exports = {
     let membercount = 0;
     interaction.client.guilds.cache.forEach((guild) => membercount += guild.memberCount);
     const infoEmbed = new MessageEmbed()
-      .setColor(color)
+      .setColor(`#FFD700`)
       .setTitle('Bot info')
       .addFields(
-        { name: 'Server Count', value: interaction.client.guilds.cache.size.toString() },
-        { name: 'User Count', value: membercount.toString() }
+        { name: 'Server Count', value: interaction.client.guilds.cache.size.toString(), inline: true },
+        { name: 'User Count', value: membercount.toString(), inline: true }
+        { name: `Release Version`, value: `1.0.0`, inline: true}     
       )
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
       .setTimestamp();
     interaction.reply({ embeds: [infoEmbed] });
   }

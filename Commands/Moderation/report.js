@@ -32,12 +32,13 @@ module.exports = {
     const reportEmbed = new MessageEmbed()
       .setColor(`#8B0000`)
       .setTitle(`New Report`)
-      .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
+      .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(
         { name: 'Submitted by:', value: `${interaction.member.user.username}`, inline: true },
         { name: 'Defendant:', value: `${member}`, inline: true },
         { name: 'Offense', value: `${report}`, inline: true }
       )
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
       .setTimestamp();
     log.send({ embeds: [reportEmbed] });
     interaction.reply({ content: `${member} has been successfully reported to the server's staff.`, ephemeral: true });

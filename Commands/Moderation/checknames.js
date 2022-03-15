@@ -26,7 +26,7 @@ module.exports = {
     namesArr.forEach((name) => content += `${'`' + name.newName + '`'} - ${moment(name.date).format('D.M.Y')}, at ${moment(name.date).format('LT')} GMT\n`);
     let color = getRoleColor(interaction.guild);
     const nameChangesEmbed = new MessageEmbed()
-      .setColor(color)
+      .setColor(`#FFD700`)
       .setTitle(`${member.user.tag}'s nicknames`)
       .setDescription(content)
       .setTimestamp();
