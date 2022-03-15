@@ -25,7 +25,7 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const banInfoEmbed = new MessageEmbed()
-      .setColor(#2E9C2C)
+      .setColor(`#2E9C2C`)
       .setTitle(`Ban Information`)
       .addFields(
         { name: `Defendant's name:`, value: username , inline: true },

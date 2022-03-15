@@ -73,7 +73,7 @@ module.exports = {
     member.roles.add(mutedRole);
     let color = getRoleColor(interaction.guild);
     const muteEmbed = new MessageEmbed()
-      .setColor(#8B0000)
+      .setColor(`#8B0000`)
       .setTitle(`Mute Information`)
       .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
       .addFields(

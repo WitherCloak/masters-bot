@@ -51,7 +51,7 @@ module.exports = {
       else bans++;
 
       const banEmbed = new MessageEmbed()
-        .setColor(#8B0000)
+        .setColor(`#8B0000`)
         .setTitle(`Ban Information`)
         .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
         .addFields(
@@ -90,7 +90,7 @@ module.exports = {
       else bans = bans + 1;
 
       const banEmbed = new MessageEmbed()
-        .setColor(#8B0000)
+        .setColor(`#8B0000`)
         .setTitle(`Ban Information`)
         .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
 

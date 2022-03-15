@@ -30,7 +30,7 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const reportEmbed = new MessageEmbed()
-      .setColor(#8B0000)
+      .setColor(`#8B0000`)
       .setTitle(`New Report`)
       .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
       .addFields(

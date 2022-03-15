@@ -37,7 +37,7 @@ module.exports = {
     else warns++;
     let color = getRoleColor(interaction.guild);
     const warnEmbed = new MessageEmbed()
-      .setColor(#8B0000)
+      .setColor(`#8B0000`)
       .setTitle(`Warn Information`)
       .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
       .addFields(

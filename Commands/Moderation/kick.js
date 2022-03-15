@@ -42,7 +42,7 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const kickEmbed = new MessageEmbed()
-      .setColor(#8B0000)
+      .setColor(`#8B0000`)
       .setTitle(`Kick Information`)
       .setThumbnail(`https://i.imgur.com/YqM9tbt.png`)
       .addFields(
