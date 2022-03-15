@@ -43,7 +43,7 @@ module.exports = {
       .addFields(
         { name: `Defendant's name:`, value: `${member.user.tag}`, inline: true },
         { name: `Issued by:`, value: `${author}`, inline: true },
-        { name: 'Reason:', value: `${reason}` inline: true }
+        { name: 'Reason:', value: `${reason}`, inline: true }
       )
       .setFooter(`Any issues? Please contact an Admin by opening a support ticket or DM wither#7777.`)
       .setTimestamp();
