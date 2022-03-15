@@ -1,0 +1,25 @@
+{
+  "name": "Masters Bot",
+  "version": "8.3.5",
+  "description": "Wither's skin of Focus04's discord bot, built for SB Masters",
+  "main": "index.js",
+  "scripts": {
+    "logs": "heroku logs --app focus-dis -t"
+  },
+  "author": "Focus#7804 + wither#7777",
+  "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.7.0",
+    "@keyv/mongo": "^1.2.3",
+    "discord.js": "^13.2.0",
+    "dotenv": "^16.0.0",
+    "fs": "0.0.1-security",
+    "keyv": "^4.1.0",
+    "moment": "^2.27.0",
+    "mongodb": "^3.6.2",
+    "node-fetch": "^2.6.7"
+  }
+}

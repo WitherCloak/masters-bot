@@ -1,0 +1,34 @@
+{
+  "defaultPrefix": "/",
+  "reactionSuccess": "✔️",
+  "reactionError": "❌",
+  "deletionTimeout": 10000,
+  "suggestionChId": "[changeme]",
+  "bugChId": "[changeme]",
+  "urls": {
+    "botInviteLink": "[changeme]",
+    "discordInviteLink": "[changeme]",
+    "topgg": "[changeme]",
+    "website": "[changeme]",
+    "github": "[changeme]"
+  },
+  "deafultWelcomeMsg": "Welcome to SB Masters [user]!",
+  "defaultLeaveMsg": "[user] has parted ways with us.",
+  "suggestionPending": {
+    "color": "#ffff00",
+    "statusTitle": "Suggestion Pending",
+    "status": "This suggestion is currently awaiting review, please be patient."
+  },
+  "suggestionAccepted": {
+    "color": "#008000",
+    "statusTitle": "Suggestion Accepted",
+    "status": "This suggestion has been accepted and is soon to be implemented!"
+  },
+  "suggestionDeclined": {
+    "color": "#ff0000",
+    "statusTitle": "Suggestion Declined",
+    "status": "Thanks for your interest, but we currently don't need this feature."
+  },
+  "suggestionApprove": "👍",
+  "suggestionDecline": "👎"
+}
