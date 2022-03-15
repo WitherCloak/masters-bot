@@ -17,7 +17,7 @@ module.exports = {
       .setTitle('Bot info')
       .addFields(
         { name: 'Server Count', value: interaction.client.guilds.cache.size.toString(), inline: true },
-        { name: 'User Count', value: membercount.toString(), inline: true }
+        { name: 'User Count', value: membercount.toString(), inline: true },
         { name: `Release Version`, value: `1.0.0`, inline: true}     
       )
       .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
