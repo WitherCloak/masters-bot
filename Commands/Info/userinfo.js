@@ -21,7 +21,7 @@ module.exports = {
       let badges = '```' + interaction.member.user.flags.toArray().join(', ') + '```';
       if (badges === '``````') badges = '```None```';
       userInfoEmbed = new MessageEmbed()
-        .setColor(color)
+        .setColor(`#a4883b`)
         .setTitle('User Information')
         .addFields(
           { name: 'Username:', value: `${interaction.member.user.tag}` },
@@ -33,6 +33,7 @@ module.exports = {
           { name: 'Permissions', value: `${perms}` }
         )
         .setThumbnail(interaction.member.user.displayAvatarURL({ dynamic: true }))
+        .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
         .setTimestamp();
     } else {
       const roles = '```' + member.roles.cache.map((role) => role.name).join(`, `) + '```';
