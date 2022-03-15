@@ -10,7 +10,7 @@ module.exports = {
   execute(interaction) {
     let color = getRoleColor(interaction.guild);
     const serverInfoEmbed = new MessageEmbed()
-      .setColor(color)
+      .setColor(`#a4883b`)
       .setTitle('Server Information')
       .addFields(
         { name: 'Server Name', value: `${interaction.guild.name}` },
