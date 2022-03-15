@@ -24,6 +24,7 @@ module.exports = {
         { name: 'Boost Count', value: `${interaction.guild.premiumSubscriptionCount || '0'}` }
       )
       .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
+      .setFooter(`Any issues? Feel free to submit a report with /bugreport!`)
       .setTimestamp();
     interaction.reply({ embeds: [serverInfoEmbed] });
   }
