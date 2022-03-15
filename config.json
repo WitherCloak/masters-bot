@@ -3,14 +3,14 @@
   "reactionSuccess": "✔️",
   "reactionError": "❌",
   "deletionTimeout": 10000,
-  "suggestionChId": "[changeme]",
-  "bugChId": "[changeme]",
+  "suggestionChId": "952967032184377444",
+  "bugChId": "952967242218373210",
   "urls": {
-    "botInviteLink": "[changeme]",
-    "discordInviteLink": "[changeme]",
-    "topgg": "[changeme]",
-    "website": "[changeme]",
-    "github": "[changeme]"
+    "botInviteLink": "[replace]",
+    "discordInviteLink": "https://discord.gg/SSexR3v7HC",
+    "topgg": "[replace]",
+    "website": "https://skyblockmasters.com",
+    "github": "https://github.com/WitherCloak/"
   },
   "deafultWelcomeMsg": "Welcome to SB Masters [user]!",
   "defaultLeaveMsg": "[user] has parted ways with us.",

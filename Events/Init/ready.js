@@ -10,7 +10,7 @@ const punishments = new Keyv(process.env.punishments);
 
 module.exports = (client) => {
   console.log('I am live!');
-  client.user.setActivity('your people.', { type: 'WATCHING' });
+  client.user.setActivity('Looking after SB Masters.', { type: 'PLAYING' });
   client.guilds.cache.forEach((guild) => {
     client.application.commands.set(commands, guild.id).catch((err) => console.log(err));
   });
