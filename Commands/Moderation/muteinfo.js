@@ -26,7 +26,7 @@ module.exports = {
     const millisecondsPerMinute = 60 * 1000;
     const minutesRemaining = Math.ceil((mutedMember.unmuteDate - Date.now()) / millisecondsPerMinute);
     const muteInfoEmbed = new MessageEmbed()
-      .setColor(`#d3a923`)
+      .setColor(`#a4883b`)
       .setTitle(`Mute Information`)
       .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(

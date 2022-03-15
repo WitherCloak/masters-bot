@@ -13,7 +13,7 @@ module.exports = {
     let membercount = 0;
     interaction.client.guilds.cache.forEach((guild) => membercount += guild.memberCount);
     const infoEmbed = new MessageEmbed()
-      .setColor(`#d3a923`)
+      .setColor(`#a4883b`)
       .setTitle('Bot info')
       .addFields(
         { name: 'Server Count', value: interaction.client.guilds.cache.size.toString(), inline: true },

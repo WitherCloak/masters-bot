@@ -32,7 +32,7 @@ module.exports = {
       .join('');
     let color = getRoleColor(interaction.guild);
     const defineEmbed = new MessageEmbed()
-      .setColor(`#d3a923`)
+      .setColor(`#a4883b`)
       .setTitle(`What does ${term} mean?`)
       .addFields(
         { name: 'Definition', value: '```' + definition + '```' },
