@@ -22,7 +22,7 @@ module.exports = {
         .setTimestamp();
     } else {
       avatarEmbed = new MessageEmbed()
-        .setColor(`#FFD700`)
+        .setColor(`#d3a923`)
         .setTimestamp()
         .setTitle(`${user.username}'s avatar`)
         .setImage(user.displayAvatarURL({ dynamic: true }));

@@ -23,7 +23,7 @@ module.exports = {
     interaction.channel.bulkDelete(amount, true);
     let color = getRoleColor(interaction.guild);
     const clearEmbed = new MessageEmbed()
-      .setColor(`#FFD700`)
+      .setColor(`#d3a923`)
       .setTitle(`Cleared Messages`)
       .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(

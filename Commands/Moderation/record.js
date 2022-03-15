@@ -30,7 +30,7 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const recordEmbed = new MessageEmbed()
-      .setColor(`#FFD700`)
+      .setColor(`#d3a923`)
       .setTitle(`${member.username}'s record`)
       .setThumbnail(interaction.guild.iconURL({ dynamic: true }))
       .addFields(

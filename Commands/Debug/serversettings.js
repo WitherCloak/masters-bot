@@ -64,7 +64,7 @@ module.exports = {
 
     let color = getRoleColor(interaction.guild);
     const botSettingsEmbed = new MessageEmbed()
-      .setColor(`#FFD7001`)
+      .setColor(`#d3a9231`)
       .setTitle(`Server settings for ${interaction.guild.name}`)
       .addFields(
         { name: 'Suggestion Channel', value: '```' + suggestionChannel + '```', inline: true },
