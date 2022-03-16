@@ -26,7 +26,7 @@
   },
   "suggestionDeclined": {
     "color": "#ff0000",
-    "statusTitle": "Suggestion Declined",
+    "statusTitle": "Suggestion Declined.",
     "status": "Thanks for your interest, but we currently don't need this feature."
   },
   "suggestionApprove": "👍",
