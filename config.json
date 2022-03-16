@@ -6,8 +6,8 @@
   "suggestionChId": "952967032184377444",
   "bugChId": "952967242218373210",
   "urls": {
-    "botInviteLink": "[replace]",
-    "discordInviteLink": "https://discord.gg/SSexR3v7HC",
+    "botInviteLink": "https://discord.com/api/oauth2/authorize?client_id=952354518484525066&permissions=8&scope=bot%20applications.commands",
+    "discordInviteLink": "https://discord.gg/kb7buwWf63",
     "topgg": "[replace]",
     "website": "https://skyblockmasters.com",
     "github": "https://github.com/WitherCloak/"
